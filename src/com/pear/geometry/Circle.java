@@ -1,6 +1,8 @@
 package com.pear.geometry;
 
-public class Circle
+import java.io.Serializable;
+
+public class Circle implements Serializable
 {
 	protected Point p0;
 	protected int radius;
