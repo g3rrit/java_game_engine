@@ -53,12 +53,12 @@ public class Button implements Drawable, Serializable
 	
 	public void mouseMoved(int x , int y)
 	{
-		if(!mouseOverButton && contains(x,y))
+		if(contains(x,y))
 		{
 			this.mouseOverButton = true;
 			image = this.buttonSprite.buttonPressed;
 		}
-		else if(mouseOverButton)
+		else
 		{
 			this.mouseOverButton = false;
 			image = this.buttonSprite.button;
